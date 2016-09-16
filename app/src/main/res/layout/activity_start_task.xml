@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.ThemeOverlay">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0a4d8d"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/iv_lgout_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LogoutClicked"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/logout" />
+
+            <ImageView
+                android:id="@+id/iv_menu_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:onClick="onMenuClick"
+                android:src="@drawable/menu_icon" />
+
+            <ImageView
+                android:id="@+id/iv_my_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/my_task" />
+
+            <TextView
+                android:id="@+id/tv_my_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Task"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity = "center">
+
+
+        <ImageView
+            android:id="@+id/btn_start"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src = "@drawable/default_tracking"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity = "center"
+            android:layout_below="@+id/btn_start"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        >
+
+    <include layout="@layout/footer"
+       />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

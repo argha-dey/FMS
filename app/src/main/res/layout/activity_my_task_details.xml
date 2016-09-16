@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0a4d8d"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/iv_lgout_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="15dp"
+            android:onClick="LogoutClicked"
+            android:src="@drawable/logout" />
+
+        <ImageView
+            android:id="@+id/iv_menu_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:onClick="onMenuClick"
+            android:src="@drawable/menu_icon" />
+
+        <ImageView
+            android:id="@+id/iv_my_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/my_task" />
+
+        <TextView
+            android:id="@+id/tv_my_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Task"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Detailed Information"
+        android:textStyle="bold"
+        android:background="#FF145691"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginTop="90dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME :"
+        android:textStyle="bold"
+        android:id="@+id/textView6"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="VISIT TO DM"
+
+        android:textStyle="bold"
+        android:id="@+id/tv_task_name"
+
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOWN NAME : "
+        android:textStyle="bold"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/tv_show_town_name"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TEST TOWN"
+        android:textStyle="bold"
+        android:id="@+id/tv_show_town_name"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/tv_task_name"
+        android:layout_alignLeft="@+id/tv_task_name"
+        android:layout_alignStart="@+id/tv_task_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START DATE :"
+        android:textStyle="bold"
+        android:id="@+id/textView10"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="06/09/2016"
+        android:textStyle="bold"
+        android:id="@+id/tv_show_start_date"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/tv_show_end_date"
+        android:layout_alignStart="@+id/tv_show_end_date" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END DATE :"
+        android:textStyle="bold"
+        android:id="@+id/textView12"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="08/09/2016"
+        android:textStyle="bold"
+        android:id="@+id/tv_show_end_date"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignRight="@+id/tv_show_town_name"
+        android:layout_alignEnd="@+id/tv_show_town_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS :"
+        android:textStyle="bold"
+        android:id="@+id/textView14"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="NOT DONE"
+        android:textStyle="bold"
+        android:id="@+id/tv_show_status"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignLeft="@+id/tv_show_end_date"
+        android:layout_alignStart="@+id/tv_show_end_date" />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="DONE"
+        android:textStyle="bold"
+        android:background="@drawable/border"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="CANCEL"
+        android:textStyle="bold"
+        android:background="@drawable/button_border"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

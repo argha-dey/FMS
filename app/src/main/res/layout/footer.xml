@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foot_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#CC05143D"
+    android:weightSum="5">
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/monitor"
+        android:background="#CC272a32"
+        android:id="@+id/left" />
+
+    <RelativeLayout
+       android:clickable="true"
+        android:background="@drawable/set_color_change"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0005143D"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_tab"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:textSize="8dp"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:id="@+id/textView3" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:background="#CC272a32" />
+
+    <RelativeLayout
+        android:clickable="true"
+        android:background="@drawable/set_color_change"
+        android:id="@+id/mytask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/relativeLayout"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0005143D"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mytask"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton2"
+            android:layout_centerHorizontal="true"
+            android:textSize="8dp"
+            android:text="My Task"
+
+            android:textColor="#ffffff"
+            android:id="@+id/textView4" />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/mytask"
+        android:background="#CC272a32"
+        />
+    <RelativeLayout
+        android:clickable="true"
+        android:background="@drawable/set_color_change"
+        android:id="@+id/repoting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/mytask"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#0005143D"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/taskrepoting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton4"
+            android:layout_centerHorizontal="true"
+            android:textSize="8dp"
+            android:text="Task Repoting"
+
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/repoting"
+        android:background="#CC272a32" />
+    <RelativeLayout
+        android:clickable="true"
+        android:background="@drawable/set_color_change"
+        android:id="@+id/monitor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/repoting"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0005143D"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/monitoring"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButton3"
+            android:layout_centerHorizontal="true"
+            android:textSize="8dp"
+            android:text="Task Monitoring"
+
+            android:textColor="#ffffff"
+            android:id="@+id/textView2" />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/monitor"
+        android:background="#CC272a32"
+        android:id="@+id/view" />
+    <RelativeLayout
+        android:clickable="true"
+        android:background="@drawable/set_color_change"
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/monitor"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0005143D"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/setting"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:textSize="8dp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView"
+            android:layout_below="@+id/imageButton5"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/monitor"
+        android:background="#CC272a32"
+        android:id="@+id/right" />
+
+</LinearLayout>
+
+
+

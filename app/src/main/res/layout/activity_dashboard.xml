@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0005143D"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0a4d8d"
+            app:popupTheme="@style/Theme.AppCompat">
+
+            <ImageView
+                android:id="@+id/iv_lgout_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:onClick="onLogoutClicked"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/logout" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_dp"
+            android:onClick="onCameraClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/image_border"
+            android:src="@drawable/dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Philip Wagner"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_occoupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Field Engineer, Cyber-Swift Infotech PVT.LTD"
+            android:textColor="@android:color/white" />
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="240dp"
+        >
+
+        <include layout="@layout/test"
+            />
+
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#041c33"
+            android:gravity="left"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="Powered By Cyber-SWIFT"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:paddingBottom="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="FMS Version 1.5"
+            android:textColor="@android:color/white"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

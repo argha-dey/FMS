@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:id="@+id/fast_layout"
+        android:orientation="horizontal"
+        >
+
+     <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginRight="0dp"
+         android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout"
+        android:clickable="true"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="30dp"
+        android:paddingTop="20dp"
+         android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="05dp"
+            android:text="Home"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_layout_my_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+
+        android:clickable="true"
+        android:background="@drawable/layout"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/iv_my_task1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/my_task" />
+
+        <TextView
+            android:id="@+id/tv_my_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_my_task1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="05dp"
+            android:text="My Task"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:layout_below="@+id/fast_layout"
+        android:orientation="horizontal"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rl_task_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:background="@drawable/layout"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="22dp"
+        android:paddingTop="20dp"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/iv_task_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/task_reporting" />
+
+        <TextView
+            android:id="@+id/tv_task_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_task_report"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="05dp"
+            android:text="Task Reporting"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_task_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:background="@drawable/layout"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_weight="50">
+
+        <ImageView
+            android:id="@+id/iv_task_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/task_monitoring" />
+
+
+        <TextView
+            android:id="@+id/tv_task_monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_task_monitor"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="05dp"
+            android:text="Task Monitoring"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
